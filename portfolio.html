@@ -147,10 +147,11 @@
         }
         
         img{
-            widows: 200px;
+            width: 200px;
             height:200px;
             margin-bottom:30px;
             padding-right:30px;
+             
         }
         #dj{
             width:230px;
@@ -206,8 +207,136 @@
             color: white;
         }
     }
-     
-    @media only screen and (max-width:600px){
+    @media only screen and (min-width:575px) and (max-width:600px){
+        body{
+            background-color:#EBECF0;
+        }
+        .header{
+            background-color: white;
+        }
+        .header nav ul li {
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        div .box{
+            width:100%;
+            background-color: #40C5AF; 
+            text-align:center;    
+        }
+
+        .navbar{
+            padding:0px;
+            margin:0px;
+        }
+
+        #c-s{
+            color:grey;
+            font-size:14px;
+            margin-left:130px;
+        }
+        #c-s1{
+            color:grey;
+            font-size:14px;
+        }
+        #c-s2{
+            color:grey;
+            font-size:14px;
+            margin-top:13px;
+        }
+
+        .container{
+            padding:0px;
+        }
+
+        .box h1{
+            color:white;
+        }
+        img{
+            height:200px;
+            width:150px;
+            margin-left:0px;
+            margin-right:0px;
+            position:relative;
+        }
+        #ipad{
+            margin-bottom:20px;
+            display: block;
+            
+        }
+        #dj{
+            width:150px;
+            margin-bottom:20px;
+            position:relative;
+            display:block;
+        }
+        #pods{
+            margin-bottom:20px;
+            position:relative;
+            display:block;
+             
+        }
+
+        #tv{
+            width:150px;
+            margin-bottom:20px;
+            
+        }
+
+        .box1{
+            background-color: white;
+            margin-top:30px;
+            padding:20px 50px 0px 50px;
+            width:450px;
+            margin-left:70px;
+        }
+        .col-md-12 h1{
+            font-size:20px;
+        }
+
+        div .h1{
+            padding:0px;
+            border-bottom:1px solid grey;
+            margin-bottom:25px;
+        }
+        div .h1 h1{
+            color: #40C5AF;
+            
+        }
+        
+        .b{
+            width:150px;
+            height:auto;
+            position:absolute;
+            background-color: #40C5AF;
+            top:140px;
+            height:30px;
+            left:15px;
+            margin-bottom: 50px;
+        }
+
+        .b p{
+            color:white;
+            text-align: center;
+        }
+        
+        .green{
+            height:5px;
+            background-color: #40C5AF;
+             
+        }
+        .black{
+            background-color: black;
+            opacity: .5;
+            text-align: center;
+            padding:10px;
+        }
+        .black p,span{
+            color: white;
+        }
+    }       
+
+    @media only screen and (max-width:575px){
         body{
             background-color:#EBECF0;
         }
@@ -355,27 +484,27 @@
                     </div>
                 </div>
                 <div class = "row">
-                    <div class = "col-md-5 col-sm-6">
+                    <div class = "col-md-5 col-sm-6 col-xs-12">
                         <img src="assets/images/ipad.jpg" id = "ipad"  alt = "Ipad photo"/>
                         <div class = "b "><p>Word Guess</p></div>
                     </div>
-                    <div class = "col-md-4 col-sm-5">
+                    <div class = "col-md-4 col-sm-5 col-xs-12">
                         <img src="assets/images/dj.jpg" id = "dj" alt = "Dj disc photo"/>
                         <div class = "b "><p>RPG Game</p></div>
                     </div>
                 </div>
                 <div class = "row">
-                    <div class = "col-md-5 col-sm-6">
+                    <div class = "col-md-5 col-sm-6 col-xs-12">
                         <img src="assets/images/pods.jpg"  id = "pods" alt = "airpods photo"/>
                         <div class = "b"><p>Trivia Game</p></div>
                     </div>
-                    <div class = "col-md-4 col-sm-5">
+                    <div class = "col-md-4 col-sm-5 col-xs-12">
                         <img src="assets/images/phone.jpg" id ="phones" alt = "phone photo"/>
                         <div class = "b"><p>Info Widget</p></div>
                     </div>
                 </div>
                 <div class = "row">
-                    <div class = "col-md-6 col-sm-7">
+                    <div class = "col-md-6 col-sm-7 col-xs-12">
                         <img src="assets/images/tv.jpg" id = "tv" alt = "tv photo"/>
                         <div class = "b"><p>Rock Paper Scissors</p></div>
                     </div>
