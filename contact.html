@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
     <style>
-   
+    @media only screen and (min-width: 768px) {
         body{
             background-color:#EBECF0;
         }
@@ -21,11 +21,25 @@
         div .box{
             display: inline-block;
             background-color: #40C5AF;
-            padding:0px 20px 0px 20px;
+            padding:2px 20px 2px 20px;
              
         }
         .navbar{
             padding:0px;
+        }
+
+        #c-s{
+            color:grey;
+            font-size:14px;
+        }
+        #c-s1{
+            color:grey;
+            font-size:14px;
+        }
+        #c-s2{
+            color:grey;
+            font-size:14px;
+            margin-top:13px;
         }
 
         .container{
@@ -39,6 +53,37 @@
         img{
             width:200px;
             height:200px;
+        }
+
+        #input{
+            width:600px;
+        }
+
+        #name{
+            width:600px;
+        }
+        
+        #message{
+            margin-top:20px;
+        }
+
+        #email{
+            margin-top:20px;
+        }
+
+        #text{
+            width: 600px; 
+            height: 250px;
+
+        }
+
+        #submit{
+            background-color: #40C5AF; 
+            color:white; 
+            border:none;
+            margin-top: 10px; 
+            padding: 5px 10px 5px 10px;
+
         }
 
         .box1{
@@ -72,7 +117,121 @@
         .black p,span{
             color: white;
         }
-    
+    }
+        @media only screen and (min-width:600px) and (max-width:768px){
+            body{
+            background-color:#EBECF0;
+        }
+        .header{
+            background-color: white;
+        }
+        .header nav ul li{
+            list-style-type: none;
+            display: inline-block;
+        }
+        
+        div .box{
+            display: inline-block;
+            background-color: #40C5AF;
+            padding:2px 5px 2px 5px;
+            margin-left:5px;     
+        }
+
+        .navbar{
+            padding:0px;
+            margin:0px;
+        }
+
+        #c-s{
+            color:grey;
+            font-size:14px;
+        }
+        #c-s1{
+            color:grey;
+            font-size:14px;
+        }
+        #c-s2{
+            color:grey;
+            font-size:14px;
+            margin-top:13px;
+        }
+
+        .container{
+            padding:0px;
+        }
+
+        .box h1{
+            color:white;
+        }
+        
+        img{
+            width:200px;
+            height:200px;
+        }
+
+        #input{
+            width:470px;
+        }
+
+        #name{
+            width:470px;
+        }
+        
+        #message{
+            margin-top:20px;
+        }
+
+        #email{
+            margin-top:20px;
+        }
+
+        #text{
+            width: 470px; 
+            height: 150px;
+
+        }
+
+        #submit{
+            background-color: #40C5AF; 
+            color:white; 
+            border:none;
+            margin-top: 10px; 
+            padding: 5px 10px 5px 10px;
+
+        }
+
+        .box1{
+            background-color: white;
+            margin-top:30px;
+            padding:20px 50px 0px 50px;
+            width:569px;
+            height:536px;
+            margin-bottom: 55px;
+        }
+        div .h1{
+            padding:0px;
+            border-bottom:1px solid grey;
+            margin-bottom:25px;
+        }
+        div .h1 h1{
+            color: #40C5AF;
+            
+        }
+
+        .green{
+            height:5px;
+            background-color: #40C5AF;
+        }
+        .black{
+            background-color: black;
+            opacity: .5;
+            text-align: center;
+            padding:10px;
+        }
+        .black p,span{
+            color: white;
+        }
+    }
 
     </style>
 </head>
@@ -83,9 +242,9 @@
             <div class="container">
                 <div class = "box"><h1>Renato Pombal</h1></div>
               <ul>
-                <li><a class="navbar-brand" href="index.html" style = "color:grey; font-size:14px;">About </a></li>
-                <li><a class="navbar-brand" href="portfolio.html" style = "color:grey; font-size:14px;">| Portfolio</a></li>
-                <li><a class="navbar-brand" href="contact.html" style = "color:grey; font-size:14px; margin-top:13px;">| Contact</a></li>
+                <li><a id = "c-s" class="navbar-brand" href="index.html">About </a></li>
+                <li><a id = "c-s1" class="navbar-brand" href="portfolio.html">| Portfolio</a></li>
+                <li><a id = "c-s2" class="navbar-brand" href="contact.html">| Contact</a></li>
               </ul>
             </div>
         </nav>
@@ -95,7 +254,7 @@
             <div class ="box1">
                 <div class="row">
                     <div class = "col-md-12 h1">
-                        <h1>Contact me</h1>
+                        <h1>Contact</h1>
                     </div>
                 </div>
                     <form>
@@ -106,36 +265,36 @@
                         </div>
                         <div class = "row">
                             <div class= "col-md-12"> 
-                                <input type = "text" placeholder = "John Smith" style = "width:600px;"/>   
+                                <input id = "input" type = "text" placeholder = "John Smith"/>   
                             </div>
                         </div>
                     </form>
                     <form>
                         <div class = "row">
                             <div class = "col-md-12">
-                                <p style = "margin-top:20px;">Email</p> 
+                                <p id = "email" >Email</p> 
                             </div>
                         </div>
                         <div class = "row">
                             <div class= "col-md-12"> 
-                                <input type = "text" placeholder = "John Smith" style = "width:600px;"/>   
+                                <input id = "name" type = "text" placeholder = "John Smith" />   
                             </div>
                         </div>
                     </form>
                     <form>
                         <div class = "row">
                             <div class = "col-md-12">
-                                <p style = "margin-top:20px;">Message</p> 
+                                <p id = "message" >Message</p> 
                             </div>
                         </div>
                         <div class = "row">
                             <div class= "col-md-12"> 
-                                <textarea style="width: 600px; height: 250px;"></textarea>   
+                                <textarea id ="text"></textarea>   
                             </div>
                         </div>
                         <div class = "row">
                             <div class= "col-md-12"> 
-                                <input type = "submit" style = "background-color: #40C5AF; color:white; border:none;margin-top: 10px; padding: 5px 10px 5px 10px; "/>   
+                                <input id = "submit" type = "submit"/>   
                             </div>
                         </div>
                     </form> 
