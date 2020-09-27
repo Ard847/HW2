@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <style>
+        body{
+            background-color:#EBECF0;
+        }
+        .header{
+            background-color: white;
+        }
+        .header nav ul li{
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        div .box{
+            display: inline-block;
+            background-color: #40C5AF;
+            padding:0px 20px 0px 20px;
+             
+        }
+        .navbar{
+            padding:0px;
+        }
+
+        .container{
+            padding:0px;
+        }
+
+        .box h1{
+            color:white;
+        }
+        
+        img{
+            width:250px;
+            height:250px;
+            margin-bottom:30px;
+            padding-right:30px;
+        }
+
+        .box1{
+            background-color: white;
+            margin-top:30px;
+            padding:20px 50px 0px 50px;
+            width:650px;
+            margin-bottom: 40px;
+        }
+        div .h1{
+            padding:0px;
+            border-bottom:1px solid grey;
+            margin-bottom:25px;
+        }
+        div .h1 h1{
+            color: #40C5AF;
+            
+        }
+        
+        .b{
+            width:220px;
+            height:auto;
+            position:absolute;
+            background-color: #40C5AF;
+            top:180px;
+            height:30px;
+        }
+
+        .b p{
+            color:white;
+            text-align: center;
+        }
+        .green{
+            height:5px;
+            background-color: #40C5AF;
+        }
+        .black{
+            background-color: black;
+            opacity: .5;
+            text-align: center;
+            padding:10px;
+        }
+        .black p,span{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class = "header">
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <div class = "box"><h1>Renato Pombal</h1></div>
+              <ul>
+                <li><a class="navbar-brand" href="index.html" style = "color:grey; font-size:14px;">About </a></li>
+                <li><a class="navbar-brand" href="portfolio.html" style = "color:grey; font-size:14px;">| Portfolio</a></li>
+                <li><a class="navbar-brand" href="contact.html" style = "color:grey; font-size:14px; margin-top:13px;">| Contact</a></li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class = "container ">
+            <div class ="box1">
+                <div class="row">
+                    <div class = "col-md-12 h1">
+                        <h1>Portfolio</h1>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-5">
+                        <img src="assets/images/ipad.jpg" alt = "Ipad photo"/>
+                        <div class = "b "><p>Word Guess</p></div>
+                    </div>
+                    <div class = "col-md-4">
+                        <img src="assets/images/dj.jpg" alt = "Dj disc photo"/>
+                        <div class = "b "><p>RPG Game</p></div>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-5">
+                        <img src="assets/images/pods.jpg" alt = "airpods photo"/>
+                        <div class = "b"><p>Trivia Game</p></div>
+                    </div>
+                    <div class = "col-md-4">
+                        <img src="assets/images/phone.jpg" alt = "phone photo"/>
+                        <div class = "b"><p>Info Widget</p></div>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-6">
+                        <img src="assets/images/tv.jpg" alt = "tv photo"/>
+                        <div class = "b"><p>Rock Paper Scissors</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class = "green"></div>
+        <div class = black> <span>&copy</span> <p style = "margin: 0px;">Copywrite</p></div>
+    </footer>
+</body>
+</html>
